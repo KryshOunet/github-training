@@ -1,14 +1,10 @@
 name: greeting
-
 on:
   issues:
   push:
     types: [opened]
-
 jobs:
   greet:
-    
     runs-on: ubuntu-latest
-    
     steps:
       - run: echo "Hello from the shell"
